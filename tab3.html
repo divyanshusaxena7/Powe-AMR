@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .pagination {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .page-item {
+            margin: 0 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+            
+            border-radius: 4px;
+        }
+
+        .page-link:hover {
+            background-color: #eee;
+        }
+
+        .active .page-link {
+            background-color: white;
+            border: 1px solid grey;
+        }
+        .active .page-link:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(8)):not(:nth-child(9)){
+            background-color: white;
+            border: none;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="table-content">
+        <!-- Your table content goes here -->
+    </div>
+
+    <div id="pagination-container">
+        <ul class="pagination">
+             <li class="page-item"><a href="#" class="page-link" onclick="changePage(1)">First</a></li>
+             <li class="page-item"><a href="#" class="page-link" onclick="changePage(1)">Prev</a></li>
+            <li class="page-item"><a href="#" class="page-link" onclick="changePage(1)">1</a></li>
+            <li class="page-item"><a href="#" class="page-link" onclick="changePage(2)">2</a></li>
+            <li class="page-item"><a href="#" class="page-link" onclick="changePage(3)">3</a></li>
+            <li class="page-item"><a href="#" class="page-link" onclick="changePage(1)">4</a></li>
+
+            <li class="page-item"><a href="#" class="page-link" onclick="changePage(1)">5</a></li>
+            <li class="page-item"><a href="#" class="page-link" onclick="changePage(1)">Next</a></li>
+            <li class="page-item"><a href="#" class="page-link" onclick="changePage(1)">Last</a></li>
+
+
+            <!-- Add more page items as needed -->
+        </ul>
+    </div>
+
+    <script>
+        // Function to change the active page
+        function changePage(pageNumber) {
+            // Add logic to fetch and display content for the selected page
+
+            // Remove the "active" class from all page links
+            var pageLinks = document.querySelectorAll('.page-link');
+            pageLinks.forEach(function (link) {
+                link.parentElement.classList.remove('active');
+            });
+
+            // Add the "active" class to the clicked page link
+            event.currentTarget.parentElement.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>

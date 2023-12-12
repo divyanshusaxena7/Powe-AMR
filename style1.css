@@ -979,6 +979,7 @@ tr:nth-child(1) {
     color: black;
     height:20px;
     font-size: 13px;
+    font-weight: bold;
     border-radius: 4px;
     background-color:lightyellow;
     border:none;
@@ -2338,18 +2339,97 @@ tr:nth-child(1) {
         border: 1px solid lightgrey;
     }
 
-    .container-fluid #container2 #r1 {
+    /* .container-fluid #container2 #r1 {
         position: absolute;
         top: -6%;
         left: 0%;
         background-color: white;
-        width: 1008px;
-        height: 70px;
+        width: 1000px;
+        height: 85px;
         font-size: 21px;
         border: 1px solid lightgrey;
         box-shadow: 5px 5px 5px rgba(220, 219, 219, 0.6);
 
 
+    } */
+
+    .container-fluid #container2 #r1 {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        flex:1;
+        position: absolute;
+        top: -5%;
+        left: 0%;
+        background-color: white;
+        width: 1008px;
+        height:260px;
+        border: 1px solid lightgrey;
+        box-shadow: 5px 5px 5px rgba(220, 219, 219, 0.6);
+        z-index: 2;
+
+    }
+
+    .container-fluid #container2 #r1 #c1{
+        position: absolute;
+        top:1%;
+        left:1%;
+        width:620px;
+    }
+    .container-fluid #container2 #r1 #c2{
+        margin-top:-1%;
+        margin-left: 59%;
+        width:400px;
+    }
+    .container-fluid #container2 #r1 #c3{
+        margin-top: 8%;
+        margin-left: -96.7%;
+        width:550px;
+    }
+    .container-fluid #container2 #r1 #c4{
+        /* position: absolute;
+        top:-14%;
+        left:54%; */
+        margin-left: 2.3%;
+        margin-top: 8%;
+        width:420px;
+    }
+    .container-fluid #container2 #r1 #c5{
+        margin-top: 15.3%;
+        margin-left: -98.5%;
+        width:380px;
+    }
+
+    .container-fluid #container2 #r1 #img1{
+        height:70px;
+        padding-top: 20px;
+    }
+
+    .container-fluid #container2 #r1 #c1p1{
+        margin-left: 25px;
+        margin-top: -52px;
+        font-size: 33px;
+    }
+    
+    .container-fluid #container2 #r1 #c1p2{
+        margin-left: 28px;
+        margin-top: -54px;
+        font-size: 33px;
+    }
+    .container-fluid #container2 #r1 #c1p3{
+        margin-left: 35px;
+        margin-top: -55px;
+        font-size: 33px;
+    }
+    .container-fluid #container2 #r1 #c1p4{
+        margin-left: 28px;
+        margin-top: -52px;
+        font-size: 33px;
+    }
+    .container-fluid #container2 #r1 #c1p5{
+        margin-left: 35px;
+        margin-top: -52px;
+        font-size: 33px;
     }
 
     .container-fluid #container4 #r1 #c1 {
@@ -2440,7 +2520,7 @@ tr:nth-child(1) {
         height: 1578px;
         width: 1008px;
         position: absolute;
-        top: 1%;
+        top: 10%;
         left: 0%;
         background-color: white;
     }
@@ -2467,7 +2547,7 @@ tr:nth-child(1) {
 
     .container-fluid #container2 #container3 #container5 {
         position: absolute;
-        top: -2%;
+        top: 10%;
         left: 0%;
         height: 310px;
         width: 1260px;
@@ -2573,7 +2653,7 @@ tr:nth-child(1) {
 
     .container-fluid #container2 #container3 #container6 #img-fluid2 {
         position: absolute;
-        top: 400%;
+        top: 460%;
         height: 690px;
         width: 1008px;
         border: 1px solid black;
@@ -2590,8 +2670,8 @@ tr:nth-child(1) {
 
     .container-fluid #container2 #container3 #container6 #charttop {
         position: absolute;
-        top: 640%;
-        left: .5%;
+        top: 690%;
+        left: 0%;
         padding: 5px;
         height: 60px;
         width: 1000px;
@@ -2606,8 +2686,8 @@ tr:nth-child(1) {
 
     .container-fluid #container2 #container3 #container6 #chartContainer {
         position: absolute;
-        top: 670%;
-        left: .5%;
+        top: 725%;
+        left: 0%;
         height: 350px;
         width: 1000px;
         border: 1px solid lightgrey;
@@ -2619,7 +2699,7 @@ tr:nth-child(1) {
         height: 678px;
         width: 1265px;
         position: absolute;
-        top: 8%;
+        top: 1150%;
         left: 0%;
         background-color: white;
     }
@@ -2628,7 +2708,7 @@ tr:nth-child(1) {
         height: 308px;
         width: 1265px;
         position: absolute;
-        top: 0%;
+        top: 10%;
         left: .1%;
         background-color: white;
     }
@@ -2708,7 +2788,7 @@ tr:nth-child(1) {
 
     #tab3-container {
         position: absolute;
-        top: -300%;
+        top: 1400%;
         left: 10%;
         display: flex;
         position: absolute;
@@ -3436,25 +3516,25 @@ tr:nth-child(1) {
     }
     .container-fluid #container2 #r1 #c2{
         margin-top:-1%;
-        margin-left: 55%;
+        margin-left: 56%;
         width:400px;
     }
     .container-fluid #container2 #r1 #c3{
         margin-top: 10%;
-        margin-left: -90.5%;
+        margin-left: -89.5%;
         width:550px;
     }
     .container-fluid #container2 #r1 #c4{
         /* position: absolute;
         top:-14%;
         left:54%; */
-        margin-left: 4%;
+        margin-left: 3.2%;
         margin-top: 10%;
         width:420px;
     }
     .container-fluid #container2 #r1 #c5{
         margin-top: 19%;
-        margin-left: -92%;
+        margin-left: -92.3%;
         width:380px;
     }
 
@@ -3464,28 +3544,28 @@ tr:nth-child(1) {
     }
 
     .container-fluid #container2 #r1 #c1p1{
-        margin-left: 55px;
+        margin-left: 25px;
         margin-top: -60px;
         font-size: 37px;
     }
     
     .container-fluid #container2 #r1 #c1p2{
-        margin-left: 58px;
+        margin-left: 28px;
         margin-top: -60px;
         font-size: 37.5px;
     }
     .container-fluid #container2 #r1 #c1p3{
-        margin-left: 59px;
+        margin-left: 35px;
         margin-top: -62px;
         font-size: 38px;
     }
     .container-fluid #container2 #r1 #c1p4{
-        margin-left: 58px;
+        margin-left: 28px;
         margin-top: -55px;
         font-size: 38px;
     }
     .container-fluid #container2 #r1 #c1p5{
-        margin-left: 60px;
+        margin-left: 35px;
         margin-top: -55px;
         font-size: 38px;
     }
